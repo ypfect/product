@@ -292,3 +292,138 @@ PropertyAccessException 1: org.springframework.beans.MethodInvocationException: 
 	... 17 more
  INFO 2019-05-22 22:55:36 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
  INFO 2019-05-22 22:55:36 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:03:00 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 23:03:00 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45b63ba3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 23:03:00 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 23:03:00 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1230 ms 
+ INFO 2019-05-22 23:03:01 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 23:03:01 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 23:03:01 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 23:03:01 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 23:03:01 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 23:03:01 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 23:03:01 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 23:03:01 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 23:03:01 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 23:03:01 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:03:01 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:06:57 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 23:06:57 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73b528e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 23:06:58 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 23:06:58 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1191 ms 
+ INFO 2019-05-22 23:06:58 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 23:06:58 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 23:06:58 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 23:06:58 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 23:06:58 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 23:06:58 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 23:06:58 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 23:06:58 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 23:06:58 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 23:06:58 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:06:58 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:15:46 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 23:15:47 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac272d1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 23:15:47 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 23:15:47 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1176 ms 
+ INFO 2019-05-22 23:15:47 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 23:15:47 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 23:15:48 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 23:15:48 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 23:15:48 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 23:15:48 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 23:15:48 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 23:15:48 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 23:15:48 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 23:15:48 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:15:48 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:35:08 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 23:35:10 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 23:35:10 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
