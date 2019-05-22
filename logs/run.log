@@ -1,0 +1,294 @@
+ WARN 2019-05-22 22:41:11 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:41:11 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:41:11 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:41:54 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:41:54 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:41:54 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:42:20 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:42:20 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:42:20 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:45:25 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:45:25 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:45:25 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:46:49 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:46:49 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:46:49 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:47:11 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:47:11 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:47:11 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:47:46 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:47:46 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:47:46 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:52:41 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:52:41 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:52:41 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ WARN 2019-05-22 22:53:44 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'pageHelperProperties' defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class]] for bean 'pageHelperProperties': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=interceptorConfig; factoryMethodName=pageHelperProperties; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class]] bound. 
+ INFO 2019-05-22 22:53:44 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:53:44 [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'pageHelperProperties', defined in class path resource [com/github/pagehelper/autoconfigure/PageHelperAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/overstar/product_service/config/InterceptorConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+ INFO 2019-05-22 22:54:45 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 22:54:45 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6325271] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 22:54:45 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 22:54:46 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1219 ms 
+ INFO 2019-05-22 22:54:46 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 22:54:46 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 22:54:46 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 22:54:46 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 22:54:46 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 22:54:46 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 22:54:46 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 22:54:46 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:54:46 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 22:54:46 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 22:54:46 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 22:55:15 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 22:55:16 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32d24e25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 22:55:16 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 22:55:16 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1263 ms 
+ INFO 2019-05-22 22:55:16 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 22:55:16 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 22:55:16 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 22:55:16 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 22:55:17 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 22:55:17 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 22:55:17 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 22:55:17 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:55:17 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 22:55:17 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 22:55:17 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 22:55:34 [?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter 
+ INFO 2019-05-22 22:55:35 [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef0ccf63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ INFO 2019-05-22 22:55:35 [TomcatWebServer.java:90] Tomcat initialized with port(s): 5566 (http) 
+ INFO 2019-05-22 22:55:35 [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1188 ms 
+ INFO 2019-05-22 22:55:35 [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource 
+ INFO 2019-05-22 22:55:36 [DruidDataSource.java:930] {dataSource-1} inited 
+ INFO 2019-05-22 22:55:36 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 
+ INFO 2019-05-22 22:55:36 [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'taskExecutor' 
+ WARN 2019-05-22 22:55:36 [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter 
+ INFO 2019-05-22 22:55:36 [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'taskExecutor' 
+ INFO 2019-05-22 22:55:36 [DruidDataSource.java:1825] {dataSource-1} closed 
+ INFO 2019-05-22 22:55:36 [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+ERROR 2019-05-22 22:55:36 [SpringApplication.java:858] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.dubbo.config.ProviderConfig': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1718)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.overstar.product_service.ProductServiceApplication.main(ProductServiceApplication.java:24)
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'filter' threw exception; nested exception is java.lang.IllegalStateException: No such extension dubboServer for filter/com.alibaba.dubbo.rpc.Filter
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
+	... 17 more
+ INFO 2019-05-22 22:55:36 [AbstractConfig.java:450]  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1 
+ INFO 2019-05-22 22:55:36 [AbstractRegistryFactory.java:63]  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1 
