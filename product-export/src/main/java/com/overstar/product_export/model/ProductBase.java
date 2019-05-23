@@ -3,6 +3,12 @@ package com.overstar.product_export.model;
 import java.io.Serializable;
 import javax.persistence.*;
 
+/**
+ * 
+ * <li> 表名称: product_base</li>
+ * <li> 创建人: mbg.generated </li>
+ * <li> 创建时间: 2019-05-23 17:12:54</li>
+ */
 @Table(name = "`product_base`")
 public class ProductBase implements Serializable {
     /**
@@ -127,6 +133,13 @@ public class ProductBase implements Serializable {
      */
     @Column(name = "`source_id`")
     private String sourceId;
+
+    /**
+     * (必填项)
+     * 英文站前端显示名称
+     */
+    @Column(name = "`en_show_name`")
+    private String enShowName;
 
     /**
      * (必填项)
@@ -446,6 +459,24 @@ public class ProductBase implements Serializable {
     }
 
     /**
+     * 获取英文站前端显示名称
+     *
+     * @return en_show_name - 英文站前端显示名称
+     */
+    public String getEnShowName() {
+        return enShowName;
+    }
+
+    /**
+     * 设置英文站前端显示名称
+     *
+     * @param enShowName 英文站前端显示名称
+     */
+    public void setEnShowName(String enShowName) {
+        this.enShowName = enShowName == null ? null : enShowName.trim();
+    }
+
+    /**
      * 获取所属城市ID列表
      *
      * @return city_ids - 所属城市ID列表
@@ -487,6 +518,7 @@ public class ProductBase implements Serializable {
         sb.append(", recommendFlag=").append(recommendFlag);
         sb.append(", sourceChannel=").append(sourceChannel);
         sb.append(", sourceId=").append(sourceId);
+        sb.append(", enShowName=").append(enShowName);
         sb.append(", cityIds=").append(cityIds);
         sb.append("]");
         return sb.toString();

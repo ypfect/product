@@ -4,7 +4,7 @@
 		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
 
-	<properties resource="application-online.properties"></properties>
+	<properties resource="application-dev.properties"></properties>
 	<context id="DB2Tables" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 
 		<property name="javaFileEncoding" value="UTF-8"/>
@@ -59,5 +59,9 @@
 		</javaClientGenerator>
 		<!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
 		<table tableName="product_base"/>
+		<table tableName="product_price"/>
+		<table tableName="product_spec"/>
+		<table tableName="traveller_types"/>
+		<table tableName="product_spec_travellertype"/>
 	</context>
 </generatorConfiguration>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.overstar.product_service.mapper.ProductPriceMapper">
+  <resultMap id="BaseResultMap" type="com.overstar.product_export.model.ProductPrice">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="product_id" jdbcType="INTEGER" property="productId" />
+    <result column="spec_id" jdbcType="VARCHAR" property="specId" />
+    <result column="traveller_type_id" jdbcType="INTEGER" property="travellerTypeId" />
+    <result column="booking_date" jdbcType="DATE" property="bookingDate" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="booking_advance" jdbcType="TINYINT" property="bookingAdvance" />
+    <result column="currency_id" jdbcType="TINYINT" property="currencyId" />
+    <result column="market_price" jdbcType="DOUBLE" property="marketPrice" />
+    <result column="cost" jdbcType="DOUBLE" property="cost" />
+    <result column="sale_price" jdbcType="DOUBLE" property="salePrice" />
+  </resultMap>
+</mapper>

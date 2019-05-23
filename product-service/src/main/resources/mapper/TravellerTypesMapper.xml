@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.overstar.product_service.mapper.TravellerTypesMapper">
+  <resultMap id="BaseResultMap" type="com.overstar.product_export.model.TravellerTypes">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type_name_zh" jdbcType="VARCHAR" property="typeNameZh" />
+    <result column="type_name_en" jdbcType="VARCHAR" property="typeNameEn" />
+    <result column="start_age" jdbcType="INTEGER" property="startAge" />
+    <result column="end_age" jdbcType="INTEGER" property="endAge" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="normal_price" jdbcType="BIT" property="normalPrice" />
+    <result column="type_code" jdbcType="INTEGER" property="typeCode" />
+    <result column="stock_num" jdbcType="INTEGER" property="stockNum" />
+  </resultMap>
+</mapper>
