@@ -1,0 +1,4 @@
+dubboServer=com.overstar.product_service.filter.DubboServerFilter
+dubboClient=com.itrip.starter.dubbo.filter.DubboClientFilter
+flowControl=com.itrip.starter.dubbo.filter.FlowControlFilter
+cacheFilter=com.itrip.starter.dubbo.filter.CacheFilter
