@@ -6,4 +6,6 @@ package com.overstar.product_export.service;
  * @Date 2019/5/22 20:29
  */
 public interface IProductPriceService {
+
+    String firstRpc();
 }

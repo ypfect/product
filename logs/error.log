@@ -286,3 +286,49 @@ PropertyAccessException 1: org.springframework.beans.MethodInvocationException: 
 	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1714)
 	... 17 more
+ERROR 2019-05-23 16:31:55.943 [FailbackRegistry.java:175]  [DUBBO] Failed to uregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductQueryService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductQueryService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306414&version=0.0.1, waiting for retry, cause: Failed to unregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductQueryService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductQueryService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306414&version=0.0.1 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=service-product&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=13804&timestamp=1558598306205, cause: ZkClient already closed!, dubbo version: 2.5.3, current host: 127.0.0.1 
+com.alibaba.dubbo.rpc.RpcException: Failed to unregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductQueryService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductQueryService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306414&version=0.0.1 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=service-product&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=13804&timestamp=1558598306205, cause: ZkClient already closed!
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:110)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:160)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol$1.unexport(RegistryProtocol.java:130)
+	at com.alibaba.dubbo.config.ServiceConfig.unexport(ServiceConfig.java:267)
+	at com.alibaba.dubbo.config.spring.ServiceBean.destroy(ServiceBean.java:255)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.lang.IllegalStateException: ZkClient already closed!
+	at org.I0Itec.zkclient.ZkClient.retryUntilConnected(ZkClient.java:988)
+	at org.I0Itec.zkclient.ZkClient.delete(ZkClient.java:1048)
+	at org.I0Itec.zkclient.ZkClient.delete(ZkClient.java:1043)
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperClient.delete(ZkclientZookeeperClient.java:57)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:108)
+	... 13 more
+ERROR 2019-05-23 16:31:55.974 [FailbackRegistry.java:175]  [DUBBO] Failed to uregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductPriceService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductPriceService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306209&version=0.0.1, waiting for retry, cause: Failed to unregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductPriceService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductPriceService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306209&version=0.0.1 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=service-product&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=13804&timestamp=1558598306205, cause: ZkClient already closed!, dubbo version: 2.5.3, current host: 127.0.0.1 
+com.alibaba.dubbo.rpc.RpcException: Failed to unregister dubbo://192.168.0.143:20880/com.overstar.product_export.service.IProductPriceService?anyhost=true&application=service-product&default.retries=0&default.service.filter=dubboServer&dubbo=2.5.3&group=product&interface=com.overstar.product_export.service.IProductPriceService&methods=*&pid=13804&revision=0.0.1&side=provider&timestamp=1558598306209&version=0.0.1 to zookeeper zookeeper://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=service-product&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=13804&timestamp=1558598306205, cause: ZkClient already closed!
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:110)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:160)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol$1.unexport(RegistryProtocol.java:130)
+	at com.alibaba.dubbo.config.ServiceConfig.unexport(ServiceConfig.java:267)
+	at com.alibaba.dubbo.config.spring.ServiceBean.destroy(ServiceBean.java:255)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.lang.IllegalStateException: ZkClient already closed!
+	at org.I0Itec.zkclient.ZkClient.retryUntilConnected(ZkClient.java:988)
+	at org.I0Itec.zkclient.ZkClient.delete(ZkClient.java:1048)
+	at org.I0Itec.zkclient.ZkClient.delete(ZkClient.java:1043)
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperClient.delete(ZkclientZookeeperClient.java:57)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:108)
+	... 13 more

@@ -10,4 +10,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ProductPriceServiceImpl implements IProductPriceService {
+    @Override
+    public String firstRpc() {
+        return "success ...";
+    }
 }
