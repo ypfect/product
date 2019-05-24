@@ -1,12 +1,10 @@
 package com.overstar.product_service.task;
 
 import com.overstar.product_export.model.ProductPrice;
+import com.overstar.product_export.model.ProductPriceNew;
 import com.overstar.product_export.model.ProductSpec;
 import com.overstar.product_export.model.ProductSpecTravellertype;
-import com.overstar.product_service.mapper.ProductBaseMapper;
-import com.overstar.product_service.mapper.ProductPriceMapper;
-import com.overstar.product_service.mapper.ProductSpecMapper;
-import com.overstar.product_service.mapper.ProductSpecTravellertypeMapper;
+import com.overstar.product_service.mapper.*;
 import com.overstar.product_service.utils.Arith;
 import org.apache.commons.lang.time.DateUtils;
 import org.slf4j.Logger;
@@ -34,6 +32,8 @@ public class AsyncService {
     public static final Logger log = LoggerFactory.getLogger("run");
     @Autowired
     private ProductPriceMapper priceMapper;
+    @Autowired
+    private ProductPriceNewMapper newMapper;
     @Autowired
     private ProductSpecTravellertypeMapper productSpecTravellertypeMapper;
     @Autowired
@@ -67,6 +67,38 @@ public class AsyncService {
         });
     }
 
+    /**
+     * 没什么求差距
+     * @param partitionIds
+     */
+    @Async("blockingQueuePool")
+    public void buildPricenew(List<Integer> partitionIds) {
+        partitionIds.stream().forEach(productId->{
+
+            ProductSpec spec = new ProductSpec();
+            spec.setProductId(productId);
+            //查询所有的规格信息
+            List<ProductSpec> specs = productSpecMapper.select(spec);
+            List<String> specIds = specs.stream().map(ProductSpec::getSpecId).collect(Collectors.toList());
+            specIds.stream().forEach(specId->{
+                List<ProductPriceNew> productPricesSpec = new ArrayList<>();
+                ProductSpecTravellertype productSpecTravellertype = new ProductSpecTravellertype();
+                productSpecTravellertype.setSpecId(specId);
+                List<ProductSpecTravellertype> specTravellertypesMappings = productSpecTravellertypeMapper.select(productSpecTravellertype);
+                specTravellertypesMappings.stream().forEach(productSpecTravellertype1 -> {
+                    List<ProductPriceNew> productPrices = finallyBuildnew(productSpecTravellertype1, productId);
+                    productPricesSpec.addAll(productPrices);
+                });
+                //一个规格搞一次
+                if (CollectionUtils.isEmpty(productPricesSpec)){
+                    return;
+                }
+                newMapper.insertList(productPricesSpec);
+            });
+
+        });
+    }
+
     private  List<ProductPrice>  finallyBuild(ProductSpecTravellertype productSpecTravellertype1, Integer productId) {
         log.info("processing  product :{}",productId);
         List<ProductPrice> productPrices = new ArrayList<>();
@@ -76,6 +108,35 @@ public class AsyncService {
         //每天的数据
         daysBetween2Points.stream().forEach(date -> {
             ProductPrice price = new ProductPrice();
+            Double adv = Math.random() * 10 + 1;
+            Double costv = Math.random() * 100 + Math.random() * 10;
+            price.setProductId(productId);
+            price.setBookingDate(date);
+            price.setBookingAdvance(adv.byteValue());
+            price.setCost(costv);
+            price.setStatus(new Integer(1).byteValue());
+            price.setTravellerTypeId(productSpecTravellertype1.getTravellerTypeId());
+            price.setSalePrice(Arith.scale(costv*1.2,2));
+            price.setMarketPrice(Arith.scale(costv*1.5,2));
+            price.setSpecId(productSpecTravellertype1.getSpecId());
+            price.setCurrencyId(new Integer(9).byteValue());
+            productPrices.add(price);
+        });
+
+        return productPrices;
+
+    }
+
+
+    private  List<ProductPriceNew>  finallyBuildnew(ProductSpecTravellertype productSpecTravellertype1, Integer productId) {
+        log.info("processing  product :{}",productId);
+        List<ProductPriceNew> productPrices = new ArrayList<>();
+        Date dateBegin = new Date();
+        Date dateEnd = DateUtils.addDays(new Date(), 365);
+        List<Date> daysBetween2Points = getDaysBetween2Points(dateBegin, dateEnd);
+        //每天的数据
+        daysBetween2Points.stream().forEach(date -> {
+            ProductPriceNew price = new ProductPriceNew();
             Double adv = Math.random() * 10 + 1;
             Double costv = Math.random() * 100 + Math.random() * 10;
             price.setProductId(productId);

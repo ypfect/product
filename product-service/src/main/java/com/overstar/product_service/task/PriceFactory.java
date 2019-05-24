@@ -43,13 +43,21 @@ public class PriceFactory {
     private ProductBaseMapper productBaseMapper;
     @Autowired
     private AsyncService asyncService;
+    @Autowired
+    private ProductPriceMapper priceMapper;
 
     @PostConstruct
     public void buildPriceInfo(){
         List<Integer> productIds = productBaseMapper.productIds();
         List<List<Integer>> partition = Lists.partition(productIds, 1445);
+        int count = priceMapper.selectCount(new ProductPrice());
+
+//        if (count>50){
+//            log.info("data exist ...");
+//            return;
+//        }
         partition.stream().forEach(proId->{
-            asyncService.buildPrice(proId);
+            asyncService.buildPricenew(proId);
         });
 
     }
