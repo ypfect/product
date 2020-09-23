@@ -20,7 +20,7 @@ import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
- * test jenkins
+ * test jenkins2
  */
 @Configuration
 public class ApplicationConfig {
