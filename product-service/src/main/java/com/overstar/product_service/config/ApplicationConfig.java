@@ -19,6 +19,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
+/**
+ * test jenkins
+ */
 @Configuration
 public class ApplicationConfig {
 	
